@@ -1,24 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-
-    public bool isStart;
-    public bool isQuit;
-
-    void OnMouseUp()
+    public void GameStart()
     {
-        if(isStart)
-        {
-            Destroy(GameObject.Find("Music"));
-            SceneManager.LoadScene("Level");
-        }
-        if (isQuit)
-        {
-            Application.Quit();
-        }
-    } 
+        SceneManager.LoadScene("Level");
+    }
+        
+    public void Keys()
+    {
+        SceneManager.LoadScene("Keys");
+    }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    public void Title()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

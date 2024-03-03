@@ -33,9 +33,9 @@ public class Menu : MonoBehaviour
         music.TitleMusic();
         SceneManager.LoadScene("MainMenu");
     }
-    public void EndTItle()
+    public void EndTitle()
     {
-        music.EndTitle();
+        //music.EndTitle();
         SceneManager.LoadScene("MainMenu");
     }
     public void Quit()

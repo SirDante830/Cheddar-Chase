@@ -34,7 +34,6 @@ public class MenuMusic : MonoBehaviour
         if (audioClip != null)
         {
             audioSource.clip = audioClip;
-            print("audioclipname: " + audioClipName);
             audioSource.Play();
         }
         else
@@ -46,38 +45,77 @@ public class MenuMusic : MonoBehaviour
     public void PlayGame()
     {
         audioSource.Stop();
-        audioSource.clip = gameMusic;
-        audioSource.Play();
+        audioClipName = "Gameplay HAAZAH";
+        AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            print("Failed to load audio clip: " + audioClipName);
+        }
     }
     public void PauseMusic()
     {
         audioSource.Stop();
-        audioSource.clip = pauseMusic;
-        audioSource.Play();
+        audioClipName = "EDITPauseControlMusic";
+        AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            print("Failed to load audio clip: " + audioClipName);
+        }
     }
     public void WinMusic()
     {
         audioSource.Stop();
-        audioSource.clip = winMusic;
-        audioSource.Play();
+        audioClipName = "WinSong";
+        AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            print("Failed to load audio clip: " + audioClipName);
+        }
     }
     public void LoseMusic()
     {
         audioSource.Stop();
-        audioSource.clip = loseMusic;
-        audioSource.Play();
+        audioClipName = "LoseScreen";
+        AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            print("Failed to load audio clip: " + audioClipName);
+        }
     }
     public void TitleMusic()
     {
         audioSource.Stop();
-        audioSource.clip = titleMusic;
-        audioSource.Play();
-    }
-    public void EndTitle()
-    {
-        audioSource.Stop();
-        audioSource.clip = titleMusic;
-        audioSource.Play();
+        audioClipName = "TitleScreenCatnMouse";
+        AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        if (audioClip != null)
+        {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            print("Failed to load audio clip: " + audioClipName);
+        }
     }
 
 }

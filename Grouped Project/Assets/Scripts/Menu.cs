@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public MenuMusic music;
+    
     void Start()
     {
+        music.AudioManager = GameObject.Find("AudioManager");
         print("printing start");
         music.GetComponent<MenuMusic>();
     }
@@ -29,6 +31,11 @@ public class Menu : MonoBehaviour
     public void Title()
     {
         music.TitleMusic();
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void EndTItle()
+    {
+        music.EndTitle();
         SceneManager.LoadScene("MainMenu");
     }
     public void Quit()

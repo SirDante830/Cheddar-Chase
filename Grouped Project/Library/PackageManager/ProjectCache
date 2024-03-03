@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638450104725072247
-    m_Hash: 2505482397
+      ticks: 638450581428956230
+    m_Hash: 395033679
   m_LockFileStatus:
     m_FilePath: D:/College/GitHub/Cheddar-Chase/Grouped Project/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638450104725648450
-    m_Hash: 207661902
+      ticks: 638450581428956230
+    m_Hash: 2469614782
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

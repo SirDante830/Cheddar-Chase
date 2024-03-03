@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuMusic : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MenuMusic : MonoBehaviour
     public AudioClip winMusic;
     public AudioClip loseMusic;
     public AudioClip titleMusic;
+    private Scene scene;
 
     void Awake()
     {
@@ -27,6 +29,12 @@ public class MenuMusic : MonoBehaviour
             DontDestroyOnLoad(transform.gameObject);
         }
        
+    }
+    void Update() {
+        if (scene.name == "WinScreen"){
+            audioClipName = "WinSong";
+            AudioClip audioClip = Resources.Load<AudioClip>("Music/" + audioClipName);
+        }
     }
     void Start()
     {

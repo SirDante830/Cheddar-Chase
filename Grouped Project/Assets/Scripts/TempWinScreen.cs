@@ -8,7 +8,7 @@ public class TempWinScreen : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene("WinScreen");
+        SceneManager.LoadScene("WinScreen");/*
         MenuMusic mmusic = FindObjectOfType<MenuMusic>();
         if (mmusic != null)
         {
@@ -18,6 +18,6 @@ public class TempWinScreen : MonoBehaviour
             {
                 yourComponent.AudioManager = mmusic.AudioManager;
             }
-        }
+        }*/
     }
 }

@@ -160,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -978.73, y: -494.92}
+  m_AnchoredPosition: {x: -977.39, y: -494.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &283646726
@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c8770ae87aaa74db08d803ebd246a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  music: {fileID: 1834168239}
 --- !u!1 &669013307
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c8770ae87aaa74db08d803ebd246a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  music: {fileID: 1834168239}
 --- !u!1 &916449377
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,7 +517,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -967.88, y: -494.92}
+  m_AnchoredPosition: {x: -966.6501, y: -494.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1013021651
@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c8770ae87aaa74db08d803ebd246a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 0}
+  music: {fileID: 1834168239}
 --- !u!1 &1167807195
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +819,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1834168237}
+  - component: {fileID: 1834168239}
   - component: {fileID: 1834168238}
   m_Layer: 0
   m_Name: LoseMusic
@@ -938,6 +939,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1834168239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834168236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ea69de4fa850043af28a34cb9a2fde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AudioManager: {fileID: 0}
+  audioSource: {fileID: 0}
+  audioClipName: TitleScreenCatnMouse
+  gameMusic: {fileID: 0}
+  pauseMusic: {fileID: 0}
+  winMusic: {fileID: 0}
+  loseMusic: {fileID: 0}
+  titleMusic: {fileID: 0}
 --- !u!1 &1945151313
 GameObject:
   m_ObjectHideFlags: 0

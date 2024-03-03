@@ -362,7 +362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -978.73, y: -494.92}
+  m_AnchoredPosition: {x: -976.33, y: -494.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409658047
@@ -681,7 +681,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ea69de4fa850043af28a34cb9a2fde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioManager: {fileID: 0}
   audioSource: {fileID: 1316542223}
+  audioClipName: TitleScreenCatnMouse
   gameMusic: {fileID: 8300000, guid: 82575fc0bedf9ba4c893ad4a350a2675, type: 3}
   pauseMusic: {fileID: 8300000, guid: 655a43d6006c0274f9c46ddb1e2e4070, type: 3}
   winMusic: {fileID: 8300000, guid: 9186a0968bfe5e04688e13af6391500a, type: 3}
@@ -823,7 +825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -965.63, y: -494.92}
+  m_AnchoredPosition: {x: -963.43, y: -494.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1518773835
@@ -1211,7 +1213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -951.49, y: -494.92}
+  m_AnchoredPosition: {x: -950.84, y: -494.92}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117361090

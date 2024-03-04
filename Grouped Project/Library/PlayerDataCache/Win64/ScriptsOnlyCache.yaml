@@ -1378,4 +1378,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level.unity
   - Assets/Scenes/WinScreen.unity
   - Assets/Scenes/LoseScreen.unity
-  playerPath: C:/Users/AllyC/Downloads/Grouped Project.exe
+  playerPath: D:/College/GitHub/Cheddar-Chase/Grouped Project/BUILD/Grouped Project.exe

@@ -577,8 +577,7 @@ Transform:
   m_LocalPosition: {x: 36.7, y: 1.49, z: 48.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 135974493}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 78.261, z: 0}
@@ -763,8 +762,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 608613304}
-  m_Father: {fileID: 78964038}
-  m_RootOrder: 0
+  m_Father: {fileID: 1047664547}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3253,7 +3252,7 @@ MonoBehaviour:
   startWaitTime: 0
   timeToRotate: 1.04
   speedWalk: 7.75
-  speedRun: 11.6
+  speedRun: 8
   viewRadius: 39.8
   viewAngle: 116.3
   playerMask:
@@ -6237,7 +6236,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269926579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.8, y: 51.612793, z: -38.6}
+  m_LocalPosition: {x: 29.4, y: 51.612793, z: -38.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -42,6 +42,10 @@ public class MenuMusic : MonoBehaviour
         }
     }
 
+    void Update(){
+        
+    }
+
     public void PlayGame()
     {
         audioSource.Stop();

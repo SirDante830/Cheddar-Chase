@@ -32,4 +32,9 @@ public class Menu : MonoBehaviour
         Application.Quit();
         print("Quitting");
     }
+
+   /* public void Resume() {
+        SceneManager.LoadScene("Level");
+        Time.timeScale = 1;
+    }*/
 }

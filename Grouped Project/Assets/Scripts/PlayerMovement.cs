@@ -25,6 +25,12 @@ public class PlayerMovement : MonoBehaviour
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
 
+// pause stuff
+    bool isPaused = false;
+    public GameObject Canvas;
+
+    public FirstPersonCamera camera;
+
 
 
     // Start is called before the first frame update
@@ -32,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         cheeseCheck = false;
+        Canvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -53,8 +60,38 @@ public class PlayerMovement : MonoBehaviour
             Application.Quit();
         }
 
+        if (Input.GetKeyDown(KeyCode.P) && isPaused == false) {
+            Debug.Log("GAME PAUSED");
+            Paused();
+        }
+        else if (Input.GetKeyDown(KeyCode.P) && isPaused == true) {
+            Debug.Log("GAME UNPAUSED");
+            
+            
+            unPaused();
+        }
 
         
+    }
+    
+    void Paused(){
+        isPaused = true;
+        camera.enabled = false;
+        Canvas.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        
+        
+        //SceneManager.LoadScene ("PauseScreen");
+    }
+     void unPaused(){
+        isPaused = false;
+        camera.enabled = true;
+        Canvas.gameObject.SetActive(false);
+        Time.timeScale = 1;
+        
+        
+        
+        //SceneManager.LoadScene ("PauseScreen");
     }
 
     void FixedUpdate()

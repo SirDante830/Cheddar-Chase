@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7050935455432503686}
   - component: {fileID: 5061205102154614092}
   - component: {fileID: 5907762392698352731}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: cup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6718806911056979097}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 17.66, y: 9.38, z: -8.38}
   m_LocalScale: {x: 0.17209835, y: 0.17209835, z: 0.17209835}
   m_ConstrainProportionsScale: 0

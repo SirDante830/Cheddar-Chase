@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7768148043784492269}
   - component: {fileID: 4817573644666575792}
   - component: {fileID: 2384352588478386113}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_tail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7171810412207664132}
   - component: {fileID: 3150761416154387966}
   - component: {fileID: 2665236661788007767}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_ears
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 3596820590693536751}
   - component: {fileID: 2704272801560253463}
   - component: {fileID: 3857831813357008473}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 2982761109755633597}
   - component: {fileID: 1669963675180167729}
   - component: {fileID: 1892686467975538237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 1264636150557960615}
   - component: {fileID: 7449000036184996271}
   - component: {fileID: 1140133212103032562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 6172699103135483851}
   - component: {fileID: 8593039575307431213}
   - component: {fileID: 3536667881977397451}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: mouse_feet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9048271258947821449}
   - component: {fileID: 6101707200379089892}
-  m_Layer: 0
+  - component: {fileID: 230719684}
+  - component: {fileID: 230719683}
+  m_Layer: 6
   m_Name: mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,3 +551,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09666619, y: 0.07331385, z: 0.13150285}
   m_Center: {x: -0.013055932, y: 0.038133882, z: -0.026982773}
+--- !u!54 &230719684
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564221867102455091}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &230719683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564221867102455091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca5fa148a356eb244821a72ce11e7ead, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 8
+  orientation: {fileID: 0}
+  playerHeight: 1.3
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
+  groundDrag: 5.3
+  maxSlopeAngle: 40

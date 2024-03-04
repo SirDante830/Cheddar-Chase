@@ -356,7 +356,6 @@
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/TempLoseScreen.cs"
 "Assets/Scripts/TempWinScreen.cs"
-"Assets/WinScreen.cs"
 -langversion:9.0
 
 /deterministic

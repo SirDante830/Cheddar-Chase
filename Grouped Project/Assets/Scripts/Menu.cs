@@ -6,17 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public MenuMusic music;
-    
-    void Start()
-    {
-        music.AudioManager = GameObject.Find("AudioManager");
-        print("printing start");
-        music.GetComponent<MenuMusic>();
-    }
     public void GameStart()
     {
-        music.PlayGame();
         SceneManager.LoadScene("Level");
     }
         
@@ -30,16 +21,15 @@ public class Menu : MonoBehaviour
     }
     public void Title()
     {
-        music.TitleMusic();
         SceneManager.LoadScene("MainMenu");
     }
     public void EndTitle()
     {
-        //music.EndTitle();
         SceneManager.LoadScene("MainMenu");
     }
     public void Quit()
     {
         Application.Quit();
+        print("Quitting");
     }
 }

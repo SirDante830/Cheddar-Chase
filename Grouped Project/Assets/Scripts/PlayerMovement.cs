@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
     bool cheeseCheck;
@@ -130,16 +130,28 @@ public class PlayerMovement : MonoBehaviour
         {
             cheeseCheck = true;
             Destroy(col.collider.gameObject);
+            print("This cheese looks great!");
         }
 
-        if(col.gameObject.name == "End")
+        if (col.gameObject.name == "cat")
         {
-            if(cheeseCheck == true)
-            {
-                //for testing
-                Destroy(col.collider.gameObject);
-            }
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene("LoseScreen");
         }
+            if (col.gameObject.name == "End")
+            {
+                if(cheeseCheck == true)
+                {
+                    Cursor.visible = true;
+                    Cursor.lockState = CursorLockMode.None;
+                    SceneManager.LoadScene("WinScreen");
+                }
+            else
+                {
+                    print("I want some cheese");
+                }
+            }
 
 
     }

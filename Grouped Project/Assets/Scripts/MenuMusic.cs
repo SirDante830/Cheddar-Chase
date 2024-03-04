@@ -24,7 +24,7 @@ public class MenuMusic : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(transform.gameObject);
+            //DontDestroyOnLoad(transform.gameObject);
         }
        
     }

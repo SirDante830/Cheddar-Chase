@@ -8,6 +8,8 @@ public class TempWinScreen : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("WinScreen");/*
         MenuMusic mmusic = FindObjectOfType<MenuMusic>();
         if (mmusic != null)

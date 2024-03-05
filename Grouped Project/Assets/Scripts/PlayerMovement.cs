@@ -70,6 +70,16 @@ public class PlayerMovement : MonoBehaviour
             
             unPaused();
         }
+         if (Input.GetKeyDown("joystick button 1") && isPaused == false) {
+            Debug.Log("GAME PAUSED");
+            Paused();
+        }
+        else if (Input.GetKeyDown("joystick button 1") && isPaused == true) {
+            Debug.Log("GAME UNPAUSED");
+            
+            
+            unPaused();
+        }
 
         
     }

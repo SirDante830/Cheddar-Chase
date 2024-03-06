@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5173434290464948683}
   - component: {fileID: 7471276718751502806}
   m_Layer: 9
-  m_Name: GameObject (4)
+  m_Name: BackRightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 6939114917976270652}
   - component: {fileID: 7989599395622418067}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: ChairBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,7 +192,7 @@ GameObject:
   - component: {fileID: 558417886516895195}
   - component: {fileID: 6067277847685177309}
   m_Layer: 8
-  m_Name: GameObject (5)
+  m_Name: ChairBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 3948393672200871940}
   - component: {fileID: 7527968534303458361}
   m_Layer: 9
-  m_Name: GameObject (1)
+  m_Name: FrontRightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 1706368868219841457}
   - component: {fileID: 4543040477418685992}
   m_Layer: 9
-  m_Name: GameObject (2)
+  m_Name: FrontLeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,8 +314,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6002369, y: 0.15230751, z: 0.5027695}
-  m_Center: {x: 0.068675995, y: 0.42384624, z: -0.004896164}
+  m_Size: {x: 0.6002369, y: 0.15230751, z: 0.5589015}
+  m_Center: {x: 0.06867597, y: 0.42384633, z: -0.03296209}
 --- !u!1 &7413178923294868346
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 7227537187874010656}
   - component: {fileID: 2094569748026922077}
   m_Layer: 9
-  m_Name: GameObject (3)
+  m_Name: BackLeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PlayerMovement : MonoBehaviour
 {
-    bool cheeseCheck;
+    public bool cheeseCheck;
+    //public AudioClip cheese;
+    AudioSource audioSource;
     //movement variables
     Rigidbody rb;
     public float MoveSpeed;
@@ -25,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSlopeAngle;
     private RaycastHit slopeHit;
 
-// pause stuff
+    // pause stuff
     bool isPaused = false;
     public GameObject Canvas;
 
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         cheeseCheck = false;
         Canvas.gameObject.SetActive(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -89,8 +92,7 @@ public class PlayerMovement : MonoBehaviour
         camera.enabled = false;
         Canvas.gameObject.SetActive(true);
         Time.timeScale = 0;
-        
-        
+        print(cheeseCheck);
         //SceneManager.LoadScene ("PauseScreen");
     }
      void unPaused(){
@@ -98,9 +100,6 @@ public class PlayerMovement : MonoBehaviour
         camera.enabled = true;
         Canvas.gameObject.SetActive(false);
         Time.timeScale = 1;
-        
-        
-        
         //SceneManager.LoadScene ("PauseScreen");
     }
 
@@ -173,13 +172,16 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+        /*
         if(col.gameObject.name == "Cheese")
         {
+            //PlaySound(cheese);
             cheeseCheck = true;
+            
             Destroy(col.collider.gameObject);
             print("This cheese looks great!");
         }
-
+        */
         if (col.gameObject.name == "cat")
         {
             Cursor.visible = true;
@@ -201,5 +203,9 @@ public class PlayerMovement : MonoBehaviour
             }
 
 
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        this.audioSource.PlayOneShot(clip);
     }
 }
